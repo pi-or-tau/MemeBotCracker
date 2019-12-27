@@ -79,6 +79,12 @@ while ii <= 10:
     ii += 1
     print(ii)
 
+while a.check_hash(orig, new):
+    a.random_block()
+    new = a.hash()
+    ii += 1
+    print(ii)
+
 a.image_save('edit-'+filename)
 a.image_show()
 
